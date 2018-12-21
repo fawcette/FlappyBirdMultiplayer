@@ -1,0 +1,28 @@
+{
+  "name": "Flappy-Bird-MMO",
+  "version": "1.0.0",
+  "description": "Flappy Bird clone but with a multiplayer aspect",
+  "main": "index.js",
+  "author": "fawcette",
+  "scripts": {
+    "start": "npm run build-watch & npm run start-server",
+    "build-watch": "webpack -w",
+    "start-server": "nodemon server.js --ignore public"
+  },
+  "dependencies": {
+    "expose-loader": "^0.7.5",
+    "express": "^4.12.3",
+    "phaser": "^3.15.1",
+    "phaser-ce": "^2.11.1",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
